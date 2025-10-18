@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -26,6 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:hint="VND"
+        android:textColor="@color/black"
+        android:background="@drawable/edt_background"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintBottom_toTopOf="@+id/tvUsd"
@@ -39,12 +42,17 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/btnConcvert1"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnConcvert1"
         android:layout_width="wrap_content"
+        android:background="@drawable/button_background"
+        app:backgroundTint="@null"
+        android:textSize="25dp"
+
         android:layout_height="wrap_content"
         android:layout_marginBottom="300dp"
         android:text="Chuyển sang Dolar (USD)"
